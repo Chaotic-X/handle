@@ -44,3 +44,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+extension AppDelegate: UITabBarControllerDelegate {
+  func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
+    if viewController is PostNavController{
+      let newVC = UIStoryboard(name: "Post", bundle: .main).instantiateViewController(withIdentifier: "postNav")
+      tabBarController.present(newVC, animated: true)
+      return false
+    }
+    return true
+  }
+}

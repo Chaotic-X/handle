@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		66B4790EFC7782C683184B7C /* Pods_handle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 948D4CB0A2C52F4992439D70 /* Pods_handle.framework */; };
+		FA760DF0227BAEF700ADAEBE /* Calendar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA760DEF227BAEF700ADAEBE /* Calendar.storyboard */; };
+		FA760DF2227BAF0700ADAEBE /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA760DF1227BAF0700ADAEBE /* Profile.storyboard */; };
+		FA760DF4227BAF1D00ADAEBE /* Post.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA760DF3227BAF1D00ADAEBE /* Post.storyboard */; };
+		FA760DF9227BAFA300ADAEBE /* MainTabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA760DF8227BAFA300ADAEBE /* MainTabBar.storyboard */; };
+		FA760E20227BE31600ADAEBE /* Goals.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA760E1F227BE31600ADAEBE /* Goals.storyboard */; };
+		FA760E24227BECA900ADAEBE /* PostNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA760E23227BECA900ADAEBE /* PostNavController.swift */; };
+		FA760E26227BF78D00ADAEBE /* HandleTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA760E25227BF78D00ADAEBE /* HandleTabBarController.swift */; };
+		FA760E28227BF97000ADAEBE /* SelectPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA760E27227BF97000ADAEBE /* SelectPhotoViewController.swift */; };
+		FA760E2A227BF98D00ADAEBE /* PostScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA760E29227BF98D00ADAEBE /* PostScheduleViewController.swift */; };
 		FA80EF11227B8B2800094830 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA80EF10227B8B2800094830 /* AppDelegate.swift */; };
 		FA80EF16227B8B2800094830 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA80EF14227B8B2800094830 /* Main.storyboard */; };
 		FA80EF18227B8B2800094830 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA80EF17227B8B2800094830 /* Assets.xcassets */; };
@@ -18,6 +27,15 @@
 		6270C0F7F50E53816B5C0998 /* Pods-handle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-handle.debug.xcconfig"; path = "Target Support Files/Pods-handle/Pods-handle.debug.xcconfig"; sourceTree = "<group>"; };
 		948D4CB0A2C52F4992439D70 /* Pods_handle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_handle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA6CADA39D0543CE0F4083D6 /* Pods-handle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-handle.release.xcconfig"; path = "Target Support Files/Pods-handle/Pods-handle.release.xcconfig"; sourceTree = "<group>"; };
+		FA760DEF227BAEF700ADAEBE /* Calendar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Calendar.storyboard; sourceTree = "<group>"; };
+		FA760DF1227BAF0700ADAEBE /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		FA760DF3227BAF1D00ADAEBE /* Post.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Post.storyboard; sourceTree = "<group>"; };
+		FA760DF8227BAFA300ADAEBE /* MainTabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainTabBar.storyboard; sourceTree = "<group>"; };
+		FA760E1F227BE31600ADAEBE /* Goals.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Goals.storyboard; sourceTree = "<group>"; };
+		FA760E23227BECA900ADAEBE /* PostNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostNavController.swift; sourceTree = "<group>"; };
+		FA760E25227BF78D00ADAEBE /* HandleTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandleTabBarController.swift; sourceTree = "<group>"; };
+		FA760E27227BF97000ADAEBE /* SelectPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPhotoViewController.swift; sourceTree = "<group>"; };
+		FA760E29227BF98D00ADAEBE /* PostScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostScheduleViewController.swift; sourceTree = "<group>"; };
 		FA80EF0D227B8B2800094830 /* handle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = handle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA80EF10227B8B2800094830 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA80EF15227B8B2800094830 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -44,7 +62,6 @@
 				6270C0F7F50E53816B5C0998 /* Pods-handle.debug.xcconfig */,
 				BA6CADA39D0543CE0F4083D6 /* Pods-handle.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -54,6 +71,70 @@
 				948D4CB0A2C52F4992439D70 /* Pods_handle.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA760DEC227BAEBE00ADAEBE /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				FA80EF14227B8B2800094830 /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		FA760DED227BAEC800ADAEBE /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				FA80EF19227B8B2800094830 /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		FA760DEE227BAED400ADAEBE /* MainTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				FA760DF8227BAFA300ADAEBE /* MainTabBar.storyboard */,
+			);
+			path = MainTabBar;
+			sourceTree = "<group>";
+		};
+		FA760DF5227BAF2300ADAEBE /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				FA760DEF227BAEF700ADAEBE /* Calendar.storyboard */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		FA760DF6227BAF2E00ADAEBE /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				FA760DF1227BAF0700ADAEBE /* Profile.storyboard */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		FA760DF7227BAF3500ADAEBE /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				FA760DF3227BAF1D00ADAEBE /* Post.storyboard */,
+			);
+			path = Post;
+			sourceTree = "<group>";
+		};
+		FA760E21227BE32100ADAEBE /* Goals */ = {
+			isa = PBXGroup;
+			children = (
+				FA760E1F227BE31600ADAEBE /* Goals.storyboard */,
+			);
+			path = Goals;
+			sourceTree = "<group>";
+		};
+		FA760E22227BEC9200ADAEBE /* NavControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FA760E23227BECA900ADAEBE /* PostNavController.swift */,
+			);
+			path = NavControllers;
 			sourceTree = "<group>";
 		};
 		FA80EF04227B8B2800094830 = {
@@ -77,6 +158,7 @@
 		FA80EF0F227B8B2800094830 /* handle */ = {
 			isa = PBXGroup;
 			children = (
+				FA760E22227BEC9200ADAEBE /* NavControllers */,
 				FA80EF28227B8BA900094830 /* Helpers */,
 				FA80EF27227B8BA400094830 /* ViewControllers */,
 				FA80EF26227B8B9F00094830 /* Views */,
@@ -101,8 +183,13 @@
 		FA80EF23227B8B8700094830 /* StoryBoards */ = {
 			isa = PBXGroup;
 			children = (
-				FA80EF14227B8B2800094830 /* Main.storyboard */,
-				FA80EF19227B8B2800094830 /* LaunchScreen.storyboard */,
+				FA760DF5227BAF2300ADAEBE /* Calendar */,
+				FA760DEC227BAEBE00ADAEBE /* Main */,
+				FA760DED227BAEC800ADAEBE /* LaunchScreen */,
+				FA760DEE227BAED400ADAEBE /* MainTabBar */,
+				FA760DF6227BAF2E00ADAEBE /* Profile */,
+				FA760DF7227BAF3500ADAEBE /* Post */,
+				FA760E21227BE32100ADAEBE /* Goals */,
 			);
 			path = StoryBoards;
 			sourceTree = "<group>";
@@ -131,6 +218,9 @@
 		FA80EF27227B8BA400094830 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				FA760E25227BF78D00ADAEBE /* HandleTabBarController.swift */,
+				FA760E27227BF97000ADAEBE /* SelectPhotoViewController.swift */,
+				FA760E29227BF98D00ADAEBE /* PostScheduleViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -202,8 +292,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA760DF2227BAF0700ADAEBE /* Profile.storyboard in Resources */,
 				FA80EF1B227B8B2800094830 /* LaunchScreen.storyboard in Resources */,
 				FA80EF18227B8B2800094830 /* Assets.xcassets in Resources */,
+				FA760DF0227BAEF700ADAEBE /* Calendar.storyboard in Resources */,
+				FA760DF9227BAFA300ADAEBE /* MainTabBar.storyboard in Resources */,
+				FA760E20227BE31600ADAEBE /* Goals.storyboard in Resources */,
+				FA760DF4227BAF1D00ADAEBE /* Post.storyboard in Resources */,
 				FA80EF16227B8B2800094830 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,7 +357,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA760E26227BF78D00ADAEBE /* HandleTabBarController.swift in Sources */,
 				FA80EF11227B8B2800094830 /* AppDelegate.swift in Sources */,
+				FA760E24227BECA900ADAEBE /* PostNavController.swift in Sources */,
+				FA760E28227BF97000ADAEBE /* SelectPhotoViewController.swift in Sources */,
+				FA760E2A227BF98D00ADAEBE /* PostScheduleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
