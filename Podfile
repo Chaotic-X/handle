@@ -7,4 +7,11 @@ target 'handle' do
 
   # Pods for handle
   pod 'JTAppleCalendar', '~> 7.1.7'
+  pod ‘FacebookCore’
+  pod ‘FacebookLogin’
+  pod ‘FacebookShare’
+  pod ‘Firebase/Core’
+  pod ‘Firebase/Firestore’
+  pod ‘Firebase/Storage’
+  pod ‘Firebase/Auth’
 end
