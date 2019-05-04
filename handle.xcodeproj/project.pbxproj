@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		66B4790EFC7782C683184B7C /* Pods_handle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 948D4CB0A2C52F4992439D70 /* Pods_handle.framework */; };
+		CED1458B227DF84700342B3B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED1458A227DF84600342B3B /* LoginViewController.swift */; };
+		CED1458D227DF88900342B3B /* FBNetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED1458C227DF88900342B3B /* FBNetworkController.swift */; };
+		CED1458F227DF99700342B3B /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED1458E227DF99700342B3B /* Message.swift */; };
 		FA760DF0227BAEF700ADAEBE /* Calendar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA760DEF227BAEF700ADAEBE /* Calendar.storyboard */; };
 		FA760DF2227BAF0700ADAEBE /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA760DF1227BAF0700ADAEBE /* Profile.storyboard */; };
 		FA760DF4227BAF1D00ADAEBE /* Post.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA760DF3227BAF1D00ADAEBE /* Post.storyboard */; };
@@ -27,6 +30,9 @@
 		6270C0F7F50E53816B5C0998 /* Pods-handle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-handle.debug.xcconfig"; path = "Target Support Files/Pods-handle/Pods-handle.debug.xcconfig"; sourceTree = "<group>"; };
 		948D4CB0A2C52F4992439D70 /* Pods_handle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_handle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA6CADA39D0543CE0F4083D6 /* Pods-handle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-handle.release.xcconfig"; path = "Target Support Files/Pods-handle/Pods-handle.release.xcconfig"; sourceTree = "<group>"; };
+		CED1458A227DF84600342B3B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CED1458C227DF88900342B3B /* FBNetworkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FBNetworkController.swift; path = handle/ViewControllers/FBNetworkController.swift; sourceTree = SOURCE_ROOT; };
+		CED1458E227DF99700342B3B /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Message.swift; path = handle/ViewControllers/Message.swift; sourceTree = SOURCE_ROOT; };
 		FA760DEF227BAEF700ADAEBE /* Calendar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Calendar.storyboard; sourceTree = "<group>"; };
 		FA760DF1227BAF0700ADAEBE /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		FA760DF3227BAF1D00ADAEBE /* Post.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Post.storyboard; sourceTree = "<group>"; };
@@ -197,6 +203,7 @@
 		FA80EF24227B8B8F00094830 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				CED1458E227DF99700342B3B /* Message.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -204,6 +211,7 @@
 		FA80EF25227B8B9500094830 /* ModelControllers */ = {
 			isa = PBXGroup;
 			children = (
+				CED1458C227DF88900342B3B /* FBNetworkController.swift */,
 			);
 			path = ModelControllers;
 			sourceTree = "<group>";
@@ -221,6 +229,7 @@
 				FA760E25227BF78D00ADAEBE /* HandleTabBarController.swift */,
 				FA760E27227BF97000ADAEBE /* SelectPhotoViewController.swift */,
 				FA760E29227BF98D00ADAEBE /* PostScheduleViewController.swift */,
+				CED1458A227DF84600342B3B /* LoginViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -387,9 +396,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CED1458B227DF84700342B3B /* LoginViewController.swift in Sources */,
 				FA760E26227BF78D00ADAEBE /* HandleTabBarController.swift in Sources */,
 				FA80EF11227B8B2800094830 /* AppDelegate.swift in Sources */,
 				FA760E24227BECA900ADAEBE /* PostNavController.swift in Sources */,
+				CED1458D227DF88900342B3B /* FBNetworkController.swift in Sources */,
+				CED1458F227DF99700342B3B /* Message.swift in Sources */,
 				FA760E28227BF97000ADAEBE /* SelectPhotoViewController.swift in Sources */,
 				FA760E2A227BF98D00ADAEBE /* PostScheduleViewController.swift in Sources */,
 			);
@@ -541,7 +553,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = UUS58J95U8;
+				DEVELOPMENT_TEAM = 3DMFD3YYQW;
 				INFOPLIST_FILE = "$(SRCROOT)/handle/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -560,7 +572,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = UUS58J95U8;
+				DEVELOPMENT_TEAM = 3DMFD3YYQW;
 				INFOPLIST_FILE = "$(SRCROOT)/handle/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
