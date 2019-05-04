@@ -20,6 +20,8 @@
 		FA760E26227BF78D00ADAEBE /* HandleTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA760E25227BF78D00ADAEBE /* HandleTabBarController.swift */; };
 		FA760E28227BF97000ADAEBE /* SelectPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA760E27227BF97000ADAEBE /* SelectPhotoViewController.swift */; };
 		FA760E2A227BF98D00ADAEBE /* PostScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA760E29227BF98D00ADAEBE /* PostScheduleViewController.swift */; };
+		FA765D40227E0B3200C75EF8 /* PhotoSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA765D3F227E0B3200C75EF8 /* PhotoSelectorViewController.swift */; };
+		FA765D42227E124300C75EF8 /* StaticContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA765D41227E124300C75EF8 /* StaticContent.swift */; };
 		FA80EF11227B8B2800094830 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA80EF10227B8B2800094830 /* AppDelegate.swift */; };
 		FA80EF16227B8B2800094830 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA80EF14227B8B2800094830 /* Main.storyboard */; };
 		FA80EF18227B8B2800094830 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA80EF17227B8B2800094830 /* Assets.xcassets */; };
@@ -42,6 +44,8 @@
 		FA760E25227BF78D00ADAEBE /* HandleTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandleTabBarController.swift; sourceTree = "<group>"; };
 		FA760E27227BF97000ADAEBE /* SelectPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPhotoViewController.swift; sourceTree = "<group>"; };
 		FA760E29227BF98D00ADAEBE /* PostScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostScheduleViewController.swift; sourceTree = "<group>"; };
+		FA765D3F227E0B3200C75EF8 /* PhotoSelectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSelectorViewController.swift; sourceTree = "<group>"; };
+		FA765D41227E124300C75EF8 /* StaticContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticContent.swift; sourceTree = "<group>"; };
 		FA80EF0D227B8B2800094830 /* handle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = handle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA80EF10227B8B2800094830 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA80EF15227B8B2800094830 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -230,6 +234,7 @@
 				FA760E27227BF97000ADAEBE /* SelectPhotoViewController.swift */,
 				FA760E29227BF98D00ADAEBE /* PostScheduleViewController.swift */,
 				CED1458A227DF84600342B3B /* LoginViewController.swift */,
+				FA765D3F227E0B3200C75EF8 /* PhotoSelectorViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -237,6 +242,7 @@
 		FA80EF28227B8BA900094830 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				FA765D41227E124300C75EF8 /* StaticContent.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -396,6 +402,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA765D40227E0B3200C75EF8 /* PhotoSelectorViewController.swift in Sources */,
+				FA765D42227E124300C75EF8 /* StaticContent.swift in Sources */,
 				CED1458B227DF84700342B3B /* LoginViewController.swift in Sources */,
 				FA760E26227BF78D00ADAEBE /* HandleTabBarController.swift in Sources */,
 				FA80EF11227B8B2800094830 /* AppDelegate.swift in Sources */,

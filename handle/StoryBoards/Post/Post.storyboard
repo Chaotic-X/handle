@@ -17,29 +17,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="159" translatesAutoresizingMaskIntoConstraints="NO" id="80F-hw-5zZ">
-                                <rect key="frame" x="158" y="343.5" width="98" height="209.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="37" translatesAutoresizingMaskIntoConstraints="NO" id="Jwu-kE-dvV">
+                                <rect key="frame" x="67" y="241" width="280" height="414"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Photo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Rs-eW-rfK">
-                                        <rect key="frame" x="0.0" y="0.0" width="98" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VIp-Rh-FqX">
-                                        <rect key="frame" x="34" y="179.5" width="30" height="30"/>
-                                        <state key="normal" title="next"/>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u92-iF-gmI">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="280"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="280" id="LFY-aK-X59"/>
+                                            <constraint firstAttribute="width" constant="280" id="U1b-lq-CoK"/>
+                                        </constraints>
                                         <connections>
-                                            <segue destination="lQD-ii-YK8" kind="show" id="d8G-4g-Hv3"/>
+                                            <segue destination="s4e-Ah-ZZi" kind="embed" identifier="toPhotoSelector" id="bfJ-mo-U5e"/>
+                                        </connections>
+                                    </containerView>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cRq-S1-KHE">
+                                        <rect key="frame" x="0.0" y="317" width="280" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sao-bz-I0R">
+                                        <rect key="frame" x="56" y="384" width="168" height="30"/>
+                                        <color key="backgroundColor" red="0.26047258480000002" green="0.31471189760000001" blue="0.5869663168" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Post To Facebook">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="postToFBbuttonTapped:" destination="Xhj-VZ-yeN" eventType="touchUpInside" id="OBC-AW-vAP"/>
                                         </connections>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="Sao-bz-I0R" firstAttribute="width" secondItem="cRq-S1-KHE" secondAttribute="width" multiplier="0.6" id="ZBs-qx-3f7"/>
+                                    <constraint firstItem="cRq-S1-KHE" firstAttribute="width" secondItem="u92-iF-gmI" secondAttribute="width" id="fxN-6t-sQE"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="80F-hw-5zZ" firstAttribute="centerX" secondItem="cjD-CY-AV4" secondAttribute="centerX" id="c6J-HA-pkd"/>
-                            <constraint firstItem="80F-hw-5zZ" firstAttribute="centerY" secondItem="cjD-CY-AV4" secondAttribute="centerY" id="kjb-nI-mTm"/>
+                            <constraint firstItem="Jwu-kE-dvV" firstAttribute="centerY" secondItem="cjD-CY-AV4" secondAttribute="centerY" id="QEA-1o-bO7"/>
+                            <constraint firstItem="Jwu-kE-dvV" firstAttribute="centerX" secondItem="cjD-CY-AV4" secondAttribute="centerX" id="bYB-QL-NP6"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="WkH-rD-FL1"/>
                     </view>
@@ -50,68 +67,13 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="captionTextField" destination="cRq-S1-KHE" id="4hi-29-YS4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dBq-pH-1Q4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3652.1739130434785" y="350.54347826086962"/>
-        </scene>
-        <!--POST-->
-        <scene sceneID="o0B-PB-KCH">
-            <objects>
-                <viewController title="POST" id="lQD-ii-YK8" customClass="PostScheduleViewController" customModule="handle" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="UYk-xl-ugD">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add Caption" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="USb-Kw-73P">
-                                <rect key="frame" x="45" y="508" width="325" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ePv-7D-uCP">
-                                <rect key="frame" x="271" y="699" width="99" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Post Now"/>
-                                <connections>
-                                    <action selector="postNowButtonTapped:" destination="lQD-ii-YK8" eventType="touchUpInside" id="6C0-9W-sES"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E9F-Dm-PMZ">
-                                <rect key="frame" x="45" y="699" width="121" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Schedule Post"/>
-                                <connections>
-                                    <action selector="schedulePostButtonTapped:" destination="lQD-ii-YK8" eventType="touchUpInside" id="f8Z-tG-xSw"/>
-                                </connections>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TG6-bc-MD1">
-                                <rect key="frame" x="45" y="168" width="325" height="325"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Post to: Insta ✓ Face - Twit ✓" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vrh-e9-nEm">
-                                <rect key="frame" x="45" y="647" width="325" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="8fl-NF-nZt"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="POST" id="rwr-ic-cuE">
-                        <barButtonItem key="rightBarButtonItem" systemItem="cancel" id="SfO-If-6dN">
-                            <connections>
-                                <action selector="postScheduleCancel:" destination="lQD-ii-YK8" id="D2K-Lv-nhU"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jPN-Io-6Tm" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4474" y="350"/>
+            <point key="canvasLocation" x="3652.1739130434785" y="350.22321428571428"/>
         </scene>
         <!--POST-->
         <scene sceneID="F3j-rF-e11">
@@ -131,6 +93,48 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z1z-Yt-duo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2744.9275362318845" y="350.54347826086962"/>
+        </scene>
+        <!--Photo Selector View Controller-->
+        <scene sceneID="b6e-BZ-quG">
+            <objects>
+                <viewController id="s4e-Ah-ZZi" customClass="PhotoSelectorViewController" customModule="handle" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jXN-0e-7TO">
+                        <rect key="frame" x="0.0" y="0.0" width="280" height="280"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1gB-SA-ilB">
+                                <rect key="frame" x="0.0" y="0.0" width="280" height="280"/>
+                                <color key="backgroundColor" red="0.75487046219999998" green="0.87250859039999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1hx-On-NeN">
+                                <rect key="frame" x="0.0" y="0.0" width="280" height="280"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                <state key="normal" title="Select Photo"/>
+                                <connections>
+                                    <action selector="selectPhotoButtonTapped:" destination="s4e-Ah-ZZi" eventType="touchUpInside" id="VMy-Hc-nNq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="1gB-SA-ilB" secondAttribute="trailing" id="Er7-wM-CLT"/>
+                            <constraint firstAttribute="trailing" secondItem="1hx-On-NeN" secondAttribute="trailing" id="LS6-1M-vm4"/>
+                            <constraint firstItem="1gB-SA-ilB" firstAttribute="top" secondItem="jXN-0e-7TO" secondAttribute="top" id="N86-3G-OMj"/>
+                            <constraint firstItem="1hx-On-NeN" firstAttribute="leading" secondItem="jXN-0e-7TO" secondAttribute="leading" id="bvi-pI-dbQ"/>
+                            <constraint firstItem="1hx-On-NeN" firstAttribute="top" secondItem="jXN-0e-7TO" secondAttribute="top" id="jp1-Mf-h4M"/>
+                            <constraint firstAttribute="bottom" secondItem="1hx-On-NeN" secondAttribute="bottom" id="lrH-mV-cKk"/>
+                            <constraint firstAttribute="bottom" secondItem="1gB-SA-ilB" secondAttribute="bottom" id="r0R-bY-ust"/>
+                            <constraint firstItem="1gB-SA-ilB" firstAttribute="leading" secondItem="jXN-0e-7TO" secondAttribute="leading" id="vCg-eo-gRb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="selectImageView" destination="1gB-SA-ilB" id="8rC-HU-SwI"/>
+                        <outlet property="selectPhotoButton" destination="1hx-On-NeN" id="5Ez-qd-SP2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o3Q-lY-17o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4472" y="252"/>
         </scene>
     </scenes>
 </document>
