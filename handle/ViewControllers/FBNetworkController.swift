@@ -196,12 +196,12 @@ class FBNetworkController {
         url.appendPathComponent(idSame)  //<- need to fix this
         //url.appendPathComponent("feed")
         
-        url.appendPathComponent("video")
+        url.appendPathComponent("feed")
         
         
         // let fields = URLQueryItem(name: "message", value: value)
         
-        let fields = URLQueryItem(name: "file_url", value: value)
+        let fields = URLQueryItem(name: "message", value: value)
         
         let fields2 = URLQueryItem(name: "access_token", value: pageAcessToken)
         
