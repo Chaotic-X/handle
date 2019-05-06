@@ -16,3 +16,5 @@ xcuserdata
 build
 .DS_Store
 Pods/
+Podfile.lock
+handle.xcworkspace/
