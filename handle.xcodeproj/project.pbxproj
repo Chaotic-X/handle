@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A250380227FF7C8004F9233 /* FirebaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A25037F227FF7C8004F9233 /* FirebaseController.swift */; };
+		3A250382227FF7E7004F9233 /* FirebaseLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A250381227FF7E7004F9233 /* FirebaseLoginController.swift */; };
+		3A250384227FF805004F9233 /* FirebaseStorageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A250383227FF805004F9233 /* FirebaseStorageController.swift */; };
 		66B4790EFC7782C683184B7C /* Pods_handle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 948D4CB0A2C52F4992439D70 /* Pods_handle.framework */; };
 		CED1458B227DF84700342B3B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED1458A227DF84600342B3B /* LoginViewController.swift */; };
 		CED1458D227DF88900342B3B /* FBNetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED1458C227DF88900342B3B /* FBNetworkController.swift */; };
@@ -29,6 +32,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A25037F227FF7C8004F9233 /* FirebaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseController.swift; sourceTree = "<group>"; };
+		3A250381227FF7E7004F9233 /* FirebaseLoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseLoginController.swift; sourceTree = "<group>"; };
+		3A250383227FF805004F9233 /* FirebaseStorageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseStorageController.swift; sourceTree = "<group>"; };
 		6270C0F7F50E53816B5C0998 /* Pods-handle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-handle.debug.xcconfig"; path = "Target Support Files/Pods-handle/Pods-handle.debug.xcconfig"; sourceTree = "<group>"; };
 		948D4CB0A2C52F4992439D70 /* Pods_handle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_handle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA6CADA39D0543CE0F4083D6 /* Pods-handle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-handle.release.xcconfig"; path = "Target Support Files/Pods-handle/Pods-handle.release.xcconfig"; sourceTree = "<group>"; };
@@ -68,6 +74,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A25037E227FF7B7004F9233 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				3A25037F227FF7C8004F9233 /* FirebaseController.swift */,
+				3A250381227FF7E7004F9233 /* FirebaseLoginController.swift */,
+				3A250383227FF805004F9233 /* FirebaseStorageController.swift */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
 		409289CB3E8646F803F8432D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -172,6 +188,7 @@
 		FA80EF0F227B8B2800094830 /* handle */ = {
 			isa = PBXGroup;
 			children = (
+				3A25037E227FF7B7004F9233 /* Firebase */,
 				FA760E22227BEC9200ADAEBE /* NavControllers */,
 				FA80EF28227B8BA900094830 /* Helpers */,
 				FA80EF27227B8BA400094830 /* ViewControllers */,
@@ -410,9 +427,12 @@
 				FA760E26227BF78D00ADAEBE /* HandleTabBarController.swift in Sources */,
 				FA80EF11227B8B2800094830 /* AppDelegate.swift in Sources */,
 				FA760E24227BECA900ADAEBE /* PostNavController.swift in Sources */,
+				3A250382227FF7E7004F9233 /* FirebaseLoginController.swift in Sources */,
 				CED1458D227DF88900342B3B /* FBNetworkController.swift in Sources */,
 				CED1458F227DF99700342B3B /* Message.swift in Sources */,
 				FA760E28227BF97000ADAEBE /* SelectPhotoViewController.swift in Sources */,
+				3A250384227FF805004F9233 /* FirebaseStorageController.swift in Sources */,
+				3A250380227FF7C8004F9233 /* FirebaseController.swift in Sources */,
 				FA760E2A227BF98D00ADAEBE /* PostScheduleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
