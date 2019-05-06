@@ -244,7 +244,7 @@ class FBNetworkController {
                 completion(false)
                 return
             }
-            
+            print(data)
         }
         
         dataTask.resume()

@@ -36,7 +36,7 @@ class FirebaseController {
      */
     static func fetch(withQuery query: Query, completion: @escaping ([QueryDocumentSnapshot]) -> ()) {
         query.getDocuments { (snapshot, error) in
-            print(snapshot)
+//            print(snapshot)
             if let error = error {
                 print(">>>>>>> There was an error in \(#file): \(#function): \(#line) \(error) \(error.localizedDescription) <<<<<<<")
                 completion([])
