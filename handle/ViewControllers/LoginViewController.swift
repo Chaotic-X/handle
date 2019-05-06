@@ -10,9 +10,6 @@ import UIKit
 import FacebookLogin
 import FacebookCore
 import FacebookShare
-import FBSDKCoreKit
-import FBSDKLoginKit
-import FBSDKShareKit
 
 class LoginViewController: UIViewController {
     
@@ -28,9 +25,12 @@ class LoginViewController: UIViewController {
     
     @IBAction func loginWithFacebook(_ sender: Any) {
         let manager = LoginManager()
+        //.pagesManageCta,
+
         
         // manager.logIn(readPermissions: [.publicProfile, .email], viewController: self) { (result) in
-        manager.logIn(permissions: [.pagesManageCta], viewController: self) { (result) in
+        manager.logIn(publishPermissions: [.managePages, .publishPages], viewController: self) { (result) in
+            
             switch result {
             case .cancelled:
                 print("User cancelled Login")
@@ -42,13 +42,15 @@ class LoginViewController: UIViewController {
                 // print("access token: \(accessToken)")
                 // print("😍")
                 
-                let test2 = "\(accessToken.tokenString)"
+                let test2 = "\(accessToken.authenticationToken)"
                 print("👻👻👻👻👻👻")
-                print(accessToken.tokenString)
+                print(accessToken.authenticationToken)
                 
                 FBNetworkController.sharedInstance.accessToken1 = test2
                 
                 // this fetch returns the pageId and
+                
+                // here we get the names of the pages
                 FBNetworkController.sharedInstance.getPageIDWithUserAccessToken(completion: { (accessTokens, namesOfPages, pageIds) in
                     
                     // here we are assigning our return values to a global varible to be called
@@ -58,6 +60,8 @@ class LoginViewController: UIViewController {
                     print(accessTokens)
                     print(namesOfPages)
                     print(pageIds)
+                    
+                    
                     
                     
                     FBNetworkController.sharedInstance.getPageTokenWithPageID(accessToken: accessTokens.first!, pageID: pageIds.first!, completion: { (pageAccessToken, idSame) in
@@ -75,25 +79,25 @@ class LoginViewController: UIViewController {
             }
         }
     }
-    
-//    func getUserProfile() {
-//        let connection = GraphRequestConnection()
-//        GraphRequest(graphPath: <#T##String#>, parameters: <#T##[String : Any]#>, tokenString: AccessToken.current?.tokenString, version: <#T##String?#>, httpMethod: <#T##HTTPMethod#>)
-//        connection.add(GraphRequest(graphPath: "/me", parameters:["fields":"id,name,about,birthday"], accessToken: AccessToken.current, httpMethod: .get, apiVersion: .defaultVersion)) {
-//            response, result in
-//            switch result {
-//            case .success(let response):
-//                //                print("😅Logged in user facebook id: \(String(describing: response.dictionaryValue?["id"]))")
-//                //                print("😅Logged in user facebook Name: \(String(describing: response.dictionaryValue?["name"]))")
-//                //                print("😅Logged in user facebook About: \(String(describing: response.dictionaryValue?["about"]))")
-//                //                print("😅Logged in user facebook Birthday: \(String(describing: response.dictionaryValue?["birthday"]))")
-//                break
-//            case .failed(let error):
-//                print("We have an error fetching logged in user profile: \(error.localizedDescription)")
-//            }
-//        }
-//        connection.start()
-//    }
+    //
+    //    func getUserProfile() {
+    //        let connection = GraphRequestConnection()
+    //        GraphRequest(graphPath: <#T##String#>, parameters: <#T##[String : Any]#>, tokenString: AccessToken.current?.tokenString, version: <#T##String?#>, httpMethod: <#T##HTTPMethod#>)
+    //        connection.add(GraphRequest(graphPath: "/me", parameters:["fields":"id,name,about,birthday"], accessToken: AccessToken.current, httpMethod: .get, apiVersion: .defaultVersion)) {
+    //            response, result in
+    //            switch result {
+    //            case .success(let response):
+    //                //                print("😅Logged in user facebook id: \(String(describing: response.dictionaryValue?["id"]))")
+    //                //                print("😅Logged in user facebook Name: \(String(describing: response.dictionaryValue?["name"]))")
+    //                //                print("😅Logged in user facebook About: \(String(describing: response.dictionaryValue?["about"]))")
+    //                //                print("😅Logged in user facebook Birthday: \(String(describing: response.dictionaryValue?["birthday"]))")
+    //                break
+    //            case .failed(let error):
+    //                print("We have an error fetching logged in user profile: \(error.localizedDescription)")
+    //            }
+    //        }
+    //        connection.start()
+    //    }
 }
 //////    @IBAction func shareButtonTapped(_ sender: Any) {
 //////        //faceBookShare()
