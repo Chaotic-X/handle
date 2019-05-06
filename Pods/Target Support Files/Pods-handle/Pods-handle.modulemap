@@ -1,6 +1,0 @@
-framework module Pods_handle {
-  umbrella header "Pods-handle-umbrella.h"
-
-  export *
-  module * { export * }
-}
