@@ -27,6 +27,10 @@ class PagesSelectTableViewCell: UITableViewCell {
         pagesToggle.isOn = false
         // Initialization code
     }
+   
+    @IBAction func pagesToggleSelected(_ sender: UISwitch) {
+            delegate?.pageToggleSelected(self)
+    }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
@@ -46,20 +50,13 @@ class PagesSelectTableViewCell: UITableViewCell {
         }
         
     }
-    
-    
-    
-    
-    
-    
+
     func updateViews() {
-        
         guard let pageNames = pageSelectCellLandingPad else {print("💋");return}
         pageNameLabel.text = pageNames
-    
     }
-
 }
+  
 protocol PagesSelectTableViewCellDelegate: class {
     func pageToggleSelected(_ sender: PagesSelectTableViewCell)
     

@@ -20,8 +20,7 @@
 		3A250382227FF7E7004F9233 /* FirebaseLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A250381227FF7E7004F9233 /* FirebaseLoginController.swift */; };
 		3A250384227FF805004F9233 /* FirebaseStorageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A250383227FF805004F9233 /* FirebaseStorageController.swift */; };
 		CEA19A6E2280F08E00998EAB /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA19A6D2280F08E00998EAB /* ProfileViewController.swift */; };
-		CEA19A702281031B00998EAB /* PagesSelectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA19A6F2281031B00998EAB /* PagesSelectTableViewCell.swift */; };
-
+		CEA19A702281031B00998EAB /* PagesSelectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA19A6F2281031B00998EAB /* PagesSelectTableViewCell.swift */; };t
 		CED1458B227DF84700342B3B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED1458A227DF84600342B3B /* LoginViewController.swift */; };
 		CED1458D227DF88900342B3B /* FBNetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED1458C227DF88900342B3B /* FBNetworkController.swift */; };
 		CED1458F227DF99700342B3B /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED1458E227DF99700342B3B /* Message.swift */; };
