@@ -14,4 +14,7 @@ target 'handle' do
   pod ‘Firebase/Firestore’
   pod ‘Firebase/Storage’
   pod ‘Firebase/Auth’
+  pod 'FBSDKCoreKit', '4.43.0'
+  pod 'FBSDKLoginKit', '4.43.0'
+  pod 'FBSDKShareKit', '4.43.0'
 end
