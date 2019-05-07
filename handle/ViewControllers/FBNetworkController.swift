@@ -250,4 +250,36 @@ class FBNetworkController {
         dataTask.resume()
         
     }
+    
+    
+//    https://graph.facebook.com/546349135390552/feed?published=false&message=A scheduled //post&scheduled_publish_time=tomorrow
+
+    
+    func autoPostToFb(message: String, scheduledTime: String, idSame: String, compeletion: @escaping((Bool) -> Void)) {
+        
+        
+        guard var url = baseUrl else {return}
+        
+        url.appendPathComponent(idSame)  //<- need to fix this
+        //url.appendPathComponent("feed")
+        
+        url.appendPathComponent("feed")
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    }
+    
+    
 }
+

@@ -11,6 +11,8 @@
 		3A250380227FF7C8004F9233 /* FirebaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A25037F227FF7C8004F9233 /* FirebaseController.swift */; };
 		3A250382227FF7E7004F9233 /* FirebaseLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A250381227FF7E7004F9233 /* FirebaseLoginController.swift */; };
 		3A250384227FF805004F9233 /* FirebaseStorageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A250383227FF805004F9233 /* FirebaseStorageController.swift */; };
+		CEA19A6E2280F08E00998EAB /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA19A6D2280F08E00998EAB /* ProfileViewController.swift */; };
+		CEA19A702281031B00998EAB /* PagesSelectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA19A6F2281031B00998EAB /* PagesSelectTableViewCell.swift */; };
 		CED1458B227DF84700342B3B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED1458A227DF84600342B3B /* LoginViewController.swift */; };
 		CED1458D227DF88900342B3B /* FBNetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED1458C227DF88900342B3B /* FBNetworkController.swift */; };
 		CED1458F227DF99700342B3B /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED1458E227DF99700342B3B /* Message.swift */; };
@@ -38,6 +40,8 @@
 		3A250383227FF805004F9233 /* FirebaseStorageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseStorageController.swift; sourceTree = "<group>"; };
 		8196B1F662FFAE6AB1B77F06 /* Pods_handle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_handle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EC6DD7055F7025D1AEE638D /* Pods-handle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-handle.debug.xcconfig"; path = "Pods/Target Support Files/Pods-handle/Pods-handle.debug.xcconfig"; sourceTree = "<group>"; };
+		CEA19A6D2280F08E00998EAB /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		CEA19A6F2281031B00998EAB /* PagesSelectTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PagesSelectTableViewCell.swift; path = handle/ViewControllers/PagesSelectTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		CED1458A227DF84600342B3B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CED1458C227DF88900342B3B /* FBNetworkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FBNetworkController.swift; path = handle/ViewControllers/FBNetworkController.swift; sourceTree = SOURCE_ROOT; };
 		CED1458E227DF99700342B3B /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Message.swift; path = handle/ViewControllers/Message.swift; sourceTree = SOURCE_ROOT; };
@@ -240,6 +244,7 @@
 		FA80EF26227B8B9F00094830 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CEA19A6F2281031B00998EAB /* PagesSelectTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -252,6 +257,7 @@
 				FA760E29227BF98D00ADAEBE /* PostScheduleViewController.swift */,
 				CED1458A227DF84600342B3B /* LoginViewController.swift */,
 				FA765D3F227E0B3200C75EF8 /* PhotoSelectorViewController.swift */,
+				CEA19A6D2280F08E00998EAB /* ProfileViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -423,6 +429,7 @@
 				FA765D42227E124300C75EF8 /* StaticContent.swift in Sources */,
 				CED1458B227DF84700342B3B /* LoginViewController.swift in Sources */,
 				FA760E26227BF78D00ADAEBE /* HandleTabBarController.swift in Sources */,
+				CEA19A6E2280F08E00998EAB /* ProfileViewController.swift in Sources */,
 				FA80EF11227B8B2800094830 /* AppDelegate.swift in Sources */,
 				FA760E24227BECA900ADAEBE /* PostNavController.swift in Sources */,
 				3A250382227FF7E7004F9233 /* FirebaseLoginController.swift in Sources */,
@@ -431,6 +438,7 @@
 				FA760E28227BF97000ADAEBE /* SelectPhotoViewController.swift in Sources */,
 				3A250384227FF805004F9233 /* FirebaseStorageController.swift in Sources */,
 				3A250380227FF7C8004F9233 /* FirebaseController.swift in Sources */,
+				CEA19A702281031B00998EAB /* PagesSelectTableViewCell.swift in Sources */,
 				FA760E2A227BF98D00ADAEBE /* PostScheduleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
