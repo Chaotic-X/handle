@@ -9,18 +9,19 @@
 import UIKit
 
 class StaticContent {
-  static let shared = StaticContent()
-  private init() {}
-  
-
-  var postContent: [PostContent] = []
-  
-  func createPost(caption: String, crPhoto: UIImage) -> [PostContent]{
-    let myPost = PostContent(fbCaption: caption, fbPhoto: crPhoto)
-    return [myPost]
-  }
+    static let shared = StaticContent()
+    private init() {}
+    
+    
+    var postContent: [PostContent] = []
+    
+    func createPost(caption: String, crPhoto: UIImage) -> PostContent{
+        let myPost = PostContent(fbCaption: caption, fbPhoto: crPhoto)
+        return myPost
+    }
 }
+
 struct PostContent {
-  let fbCaption: String
-  let fbPhoto: UIImage
+    let fbCaption: String?
+    let fbPhoto: UIImage?
 }
