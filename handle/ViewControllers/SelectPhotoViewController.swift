@@ -9,12 +9,11 @@
 import UIKit
 
 class SelectPhotoViewController: UIViewController, UITextFieldDelegate, UITableViewDelegate, UITableViewDataSource  {
-    
-    
+
     @IBOutlet weak var captionTextField: UITextField!
     
     @IBOutlet weak var fbPagesTableView: UITableView!
-    
+
     var selectedImage: UIImage?
     var pageNames: [String] = []
     var postObject: PostContent?
@@ -32,7 +31,16 @@ class SelectPhotoViewController: UIViewController, UITextFieldDelegate, UITableV
         selectedImage = nil
         captionTextField.text = nil
     }
-    
+
+  var selectedImage: UIImage?
+  var postObject: [PostContent]?
+    override func viewDidLoad() {
+        super.viewDidLoad()
+       
+        captionTextField.delegate = self
+      
+    }
+  
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         print("AAAAAAAAAAAAAAA")
@@ -79,6 +87,8 @@ class SelectPhotoViewController: UIViewController, UITextFieldDelegate, UITableV
     }
 }
 
+//MARK: -Extensions
+
 extension SelectPhotoViewController: PhotoSelectorViewControllerDelegate {
     func photoSelectorViewControllerSelected(image: UIImage) {
         captionTextField.resignFirstResponder()
@@ -91,8 +101,8 @@ extension SelectPhotoViewController: PhotoSelectorViewControllerDelegate {
 
 // Passes back the name of the FB page that was selected 
 extension SelectPhotoViewController: PagesSelectTableViewCellDelegate {
+  
     func pageToggleSelected(_ sender: PagesSelectTableViewCell) {
-        
         print("toggle was selected👄👄👄👄👄👄👄👄👄👄")
         guard let pageName = sender.pageSelectCellLandingPad else {return}
         if sender.pagesToggle.isOn {

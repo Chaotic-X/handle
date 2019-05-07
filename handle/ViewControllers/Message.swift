@@ -6,12 +6,10 @@
 //  Copyright © 2019 Alex Lundquist. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 struct Message: Codable {
     
     var message: String = ""
-    
-    
 }
 
