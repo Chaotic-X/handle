@@ -196,12 +196,12 @@ class FBNetworkController {
         url.appendPathComponent(idSame)  //<- need to fix this
         //url.appendPathComponent("feed")
         
-        url.appendPathComponent("video")
+        url.appendPathComponent("feed")
         
         
         // let fields = URLQueryItem(name: "message", value: value)
         
-        let fields = URLQueryItem(name: "file_url", value: value)
+        let fields = URLQueryItem(name: "message", value: value)
         
         let fields2 = URLQueryItem(name: "access_token", value: pageAcessToken)
         
@@ -244,10 +244,42 @@ class FBNetworkController {
                 completion(false)
                 return
             }
-            
+            print(data)
         }
         
         dataTask.resume()
         
     }
+    
+    
+//    https://graph.facebook.com/546349135390552/feed?published=false&message=A scheduled //post&scheduled_publish_time=tomorrow
+
+    
+    func autoPostToFb(message: String, scheduledTime: String, idSame: String, compeletion: @escaping((Bool) -> Void)) {
+        
+        
+        guard var url = baseUrl else {return}
+        
+        url.appendPathComponent(idSame)  //<- need to fix this
+        //url.appendPathComponent("feed")
+        
+        url.appendPathComponent("feed")
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    }
+    
+    
 }
+
