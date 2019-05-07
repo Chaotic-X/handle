@@ -7,10 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		20F92FAF8A6FDE5B84AA4A08 /* Pods_handle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8196B1F662FFAE6AB1B77F06 /* Pods_handle.framework */; };
+
+		3A1A46B32280AC7700F2366E /* RecordKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1A46B22280AC7700F2366E /* RecordKey.swift */; };
 		3A250380227FF7C8004F9233 /* FirebaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A25037F227FF7C8004F9233 /* FirebaseController.swift */; };
 		3A250382227FF7E7004F9233 /* FirebaseLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A250381227FF7E7004F9233 /* FirebaseLoginController.swift */; };
 		3A250384227FF805004F9233 /* FirebaseStorageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A250383227FF805004F9233 /* FirebaseStorageController.swift */; };
+		3A45C56B2280B4A900B0812D /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A45C56A2280B4A900B0812D /* Record.swift */; };
+		3A45C56D2281DF5B00B0812D /* RecordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A45C56C2281DF5B00B0812D /* RecordController.swift */; };
+		3B0D072FBEC7F2ABB53FEBB2 /* Pods_handle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0542EEA33003C18D9212E85 /* Pods_handle.framework */; };
+    20F92FAF8A6FDE5B84AA4A08 /* Pods_handle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8196B1F662FFAE6AB1B77F06 /* Pods_handle.framework */; };
+		3A250380227FF7C8004F9233 /* FirebaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A25037F227FF7C8004F9233 /* FirebaseController.swift */; };
+		3A250382227FF7E7004F9233 /* FirebaseLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A250381227FF7E7004F9233 /* FirebaseLoginController.swift */; };
+		3A250384227FF805004F9233 /* FirebaseStorageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A250383227FF805004F9233 /* FirebaseStorageController.swift */; };
+		CEA19A6E2280F08E00998EAB /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA19A6D2280F08E00998EAB /* ProfileViewController.swift */; };
+		CEA19A702281031B00998EAB /* PagesSelectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA19A6F2281031B00998EAB /* PagesSelectTableViewCell.swift */; };
+
 		CED1458B227DF84700342B3B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED1458A227DF84600342B3B /* LoginViewController.swift */; };
 		CED1458D227DF88900342B3B /* FBNetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED1458C227DF88900342B3B /* FBNetworkController.swift */; };
 		CED1458F227DF99700342B3B /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED1458E227DF99700342B3B /* Message.swift */; };
@@ -32,12 +43,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+
+		08D11FE0FA70B45173ECF925 /* Pods-handle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-handle.debug.xcconfig"; path = "Pods/Target Support Files/Pods-handle/Pods-handle.debug.xcconfig"; sourceTree = "<group>"; };
+		3A1A46B22280AC7700F2366E /* RecordKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RecordKey.swift; path = handle/Firebase/RecordKey.swift; sourceTree = SOURCE_ROOT; };
+		3A25037F227FF7C8004F9233 /* FirebaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseController.swift; sourceTree = "<group>"; };
+		3A250381227FF7E7004F9233 /* FirebaseLoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseLoginController.swift; sourceTree = "<group>"; };
+		3A250383227FF805004F9233 /* FirebaseStorageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseStorageController.swift; sourceTree = "<group>"; };
+		3A45C56A2280B4A900B0812D /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
+		3A45C56C2281DF5B00B0812D /* RecordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordController.swift; sourceTree = "<group>"; };
+		5179DEEC3930D8E543BB280C /* Pods-handle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-handle.release.xcconfig"; path = "Pods/Target Support Files/Pods-handle/Pods-handle.release.xcconfig"; sourceTree = "<group>"; };
+		CED1458A227DF84600342B3B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CED1458C227DF88900342B3B /* FBNetworkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FBNetworkController.swift; path = handle/ViewControllers/FBNetworkController.swift; sourceTree = SOURCE_ROOT; };
+		CED1458E227DF99700342B3B /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Message.swift; path = handle/ViewControllers/Message.swift; sourceTree = SOURCE_ROOT; };
+		F0542EEA33003C18D9212E85 /* Pods_handle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_handle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E46B7A9070D4E17E006B1BD /* Pods-handle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-handle.release.xcconfig"; path = "Pods/Target Support Files/Pods-handle/Pods-handle.release.xcconfig"; sourceTree = "<group>"; };
 		3A25037F227FF7C8004F9233 /* FirebaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseController.swift; sourceTree = "<group>"; };
 		3A250381227FF7E7004F9233 /* FirebaseLoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseLoginController.swift; sourceTree = "<group>"; };
 		3A250383227FF805004F9233 /* FirebaseStorageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseStorageController.swift; sourceTree = "<group>"; };
 		8196B1F662FFAE6AB1B77F06 /* Pods_handle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_handle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EC6DD7055F7025D1AEE638D /* Pods-handle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-handle.debug.xcconfig"; path = "Pods/Target Support Files/Pods-handle/Pods-handle.debug.xcconfig"; sourceTree = "<group>"; };
+		CEA19A6D2280F08E00998EAB /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		CEA19A6F2281031B00998EAB /* PagesSelectTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PagesSelectTableViewCell.swift; path = handle/ViewControllers/PagesSelectTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		CED1458A227DF84600342B3B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CED1458C227DF88900342B3B /* FBNetworkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FBNetworkController.swift; path = handle/ViewControllers/FBNetworkController.swift; sourceTree = SOURCE_ROOT; };
 		CED1458E227DF99700342B3B /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Message.swift; path = handle/ViewControllers/Message.swift; sourceTree = SOURCE_ROOT; };
@@ -65,14 +91,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+
+				3B0D072FBEC7F2ABB53FEBB2 /* Pods_handle.framework in Frameworks */,
+
 				20F92FAF8A6FDE5B84AA4A08 /* Pods_handle.framework in Frameworks */,
+
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+
+		3A1A46B12280AC5400F2366E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3A1A46B22280AC7700F2366E /* RecordKey.swift */,
+			);
+			name = Helpers;
+			path = handle/Models/Helpers;
+			sourceTree = "<group>";
+		};
+		3A25037E227FF7B7004F9233 /* Firebase */ = {
+
 		2C33F0FA44708B6A64256F20 /* Frameworks */ = {
+
 			isa = PBXGroup;
 			children = (
 				8196B1F662FFAE6AB1B77F06 /* Pods_handle.framework */,
@@ -80,25 +123,25 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		3A25037E227FF7B7004F9233 /* Firebase */ = {
+
+		3A45C56E2281DF6100B0812D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				3A25037F227FF7C8004F9233 /* FirebaseController.swift */,
-				3A250381227FF7E7004F9233 /* FirebaseLoginController.swift */,
-				3A250383227FF805004F9233 /* FirebaseStorageController.swift */,
+				3A45C56C2281DF5B00B0812D /* RecordController.swift */,
 			);
-			path = Firebase;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
-		EF3184306CB3371A6ECE2F23 /* Pods */ = {
+		9943585D40C9A6037550C707 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				0E46B7A9070D4E17E006B1BD /* Pods-handle.release.xcconfig */,
-				9EC6DD7055F7025D1AEE638D /* Pods-handle.debug.xcconfig */,
+				08D11FE0FA70B45173ECF925 /* Pods-handle.debug.xcconfig */,
+				5179DEEC3930D8E543BB280C /* Pods-handle.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
+
 		FA760DEC227BAEBE00ADAEBE /* Main */ = {
 			isa = PBXGroup;
 			children = (
@@ -168,8 +211,13 @@
 			children = (
 				FA80EF0F227B8B2800094830 /* handle */,
 				FA80EF0E227B8B2800094830 /* Products */,
+
+				9943585D40C9A6037550C707 /* Pods */,
+				A590B5FA5CBCCA51C414B50E /* Frameworks */,
+
 				EF3184306CB3371A6ECE2F23 /* Pods */,
 				2C33F0FA44708B6A64256F20 /* Frameworks */,
+
 			);
 			sourceTree = "<group>";
 		};
@@ -190,6 +238,7 @@
 				FA80EF27227B8BA400094830 /* ViewControllers */,
 				FA80EF26227B8B9F00094830 /* Views */,
 				FA80EF25227B8B9500094830 /* ModelControllers */,
+				3A45C56E2281DF6100B0812D /* Controllers */,
 				FA80EF24227B8B8F00094830 /* Models */,
 				FA80EF22227B8B5D00094830 /* Resources */,
 				FA80EF23227B8B8700094830 /* StoryBoards */,
@@ -225,6 +274,8 @@
 			isa = PBXGroup;
 			children = (
 				CED1458E227DF99700342B3B /* Message.swift */,
+				3A45C56A2280B4A900B0812D /* Record.swift */,
+				3A1A46B12280AC5400F2366E /* Helpers */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -240,6 +291,7 @@
 		FA80EF26227B8B9F00094830 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CEA19A6F2281031B00998EAB /* PagesSelectTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -252,6 +304,7 @@
 				FA760E29227BF98D00ADAEBE /* PostScheduleViewController.swift */,
 				CED1458A227DF84600342B3B /* LoginViewController.swift */,
 				FA765D3F227E0B3200C75EF8 /* PhotoSelectorViewController.swift */,
+				CEA19A6D2280F08E00998EAB /* ProfileViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -271,11 +324,19 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA80EF1F227B8B2800094830 /* Build configuration list for PBXNativeTarget "handle" */;
 			buildPhases = (
+
+				08B9596BE15784BD5B9A6078 /* [CP] Check Pods Manifest.lock */,
+				FA80EF09227B8B2800094830 /* Sources */,
+				FA80EF0A227B8B2800094830 /* Frameworks */,
+				FA80EF0B227B8B2800094830 /* Resources */,
+				4CB07A860CD4C76129C78F14 /* [CP] Embed Pods Frameworks */,
+
 				CD651A39EF011D2972FCE5ED /* [CP] Check Pods Manifest.lock */,
 				FA80EF09227B8B2800094830 /* Sources */,
 				FA80EF0A227B8B2800094830 /* Frameworks */,
 				FA80EF0B227B8B2800094830 /* Resources */,
 				27F369E1EBEE0BE97ECD76A3 /* [CP] Embed Pods Frameworks */,
+
 			);
 			buildRules = (
 			);
@@ -338,7 +399,33 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+
+		08B9596BE15784BD5B9A6078 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-handle-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4CB07A860CD4C76129C78F14 /* [CP] Embed Pods Frameworks */ = {
+
 		27F369E1EBEE0BE97ECD76A3 /* [CP] Embed Pods Frameworks */ = {
+
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -390,6 +477,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-handle/Pods-handle-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+
 		CD651A39EF011D2972FCE5ED /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -420,9 +508,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA765D40227E0B3200C75EF8 /* PhotoSelectorViewController.swift in Sources */,
+				3A1A46B32280AC7700F2366E /* RecordKey.swift in Sources */,
+				3A45C56B2280B4A900B0812D /* Record.swift in Sources */,
 				FA765D42227E124300C75EF8 /* StaticContent.swift in Sources */,
+				3A45C56D2281DF5B00B0812D /* RecordController.swift in Sources */,
 				CED1458B227DF84700342B3B /* LoginViewController.swift in Sources */,
 				FA760E26227BF78D00ADAEBE /* HandleTabBarController.swift in Sources */,
+				CEA19A6E2280F08E00998EAB /* ProfileViewController.swift in Sources */,
 				FA80EF11227B8B2800094830 /* AppDelegate.swift in Sources */,
 				FA760E24227BECA900ADAEBE /* PostNavController.swift in Sources */,
 				3A250382227FF7E7004F9233 /* FirebaseLoginController.swift in Sources */,
@@ -431,6 +523,7 @@
 				FA760E28227BF97000ADAEBE /* SelectPhotoViewController.swift in Sources */,
 				3A250384227FF805004F9233 /* FirebaseStorageController.swift in Sources */,
 				3A250380227FF7C8004F9233 /* FirebaseController.swift in Sources */,
+				CEA19A702281031B00998EAB /* PagesSelectTableViewCell.swift in Sources */,
 				FA760E2A227BF98D00ADAEBE /* PostScheduleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -590,13 +683,38 @@
 			};
 			name = Release;
 		};
-		FA80EF21227B8B2800094830 /* Release */ = {
+
+		FA80EF20227B8B2800094830 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0E46B7A9070D4E17E006B1BD /* Pods-handle.release.xcconfig */;
+			baseConfigurationReference = 08D11FE0FA70B45173ECF925 /* Pods-handle.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3DMFD3YYQW;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/handle/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexlundquist.handle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FA80EF21227B8B2800094830 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5179DEEC3930D8E543BB280C /* Pods-handle.release.xcconfig */;
+
+		FA80EF21227B8B2800094830 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E46B7A9070D4E17E006B1BD /* Pods-handle.release.xcconfig */;
+
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/handle/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -619,7 +737,7 @@
 				CE6984AE22809DF70026785C /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		FA80EF1F227B8B2800094830 /* Build configuration list for PBXNativeTarget "handle" */ = {
 			isa = XCConfigurationList;
@@ -628,7 +746,7 @@
 				CE6984AF22809DF70026785C /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
