@@ -12,6 +12,7 @@
 		3A250384227FF805004F9233 /* FirebaseStorageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A250383227FF805004F9233 /* FirebaseStorageController.swift */; };
 		3A61F9F42283376F00A7B85F /* RecordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A61F9F32283376F00A7B85F /* RecordController.swift */; };
 		3A61F9F8228337F900A7B85F /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A61F9F7228337F900A7B85F /* Record.swift */; };
+		3A61F9FB22833A7B00A7B85F /* RecordKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A61F9FA22833A7B00A7B85F /* RecordKey.swift */; };
 		4E83F3ECD2C753687EA1A7B1 /* Pods_handle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F05BFF0A64DB2D54A23DDD99 /* Pods_handle.framework */; };
 		CED1458B227DF84700342B3B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED1458A227DF84600342B3B /* LoginViewController.swift */; };
 		CED1458D227DF88900342B3B /* FBNetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED1458C227DF88900342B3B /* FBNetworkController.swift */; };
@@ -41,6 +42,7 @@
 		3A250383227FF805004F9233 /* FirebaseStorageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseStorageController.swift; sourceTree = "<group>"; };
 		3A61F9F32283376F00A7B85F /* RecordController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordController.swift; sourceTree = "<group>"; };
 		3A61F9F7228337F900A7B85F /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
+		3A61F9FA22833A7B00A7B85F /* RecordKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordKey.swift; sourceTree = "<group>"; };
 		CED1458A227DF84600342B3B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CED1458C227DF88900342B3B /* FBNetworkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FBNetworkController.swift; path = handle/ViewControllers/FBNetworkController.swift; sourceTree = SOURCE_ROOT; };
 		CED1458E227DF99700342B3B /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Message.swift; path = handle/ViewControllers/Message.swift; sourceTree = SOURCE_ROOT; };
@@ -84,6 +86,14 @@
 				3A250383227FF805004F9233 /* FirebaseStorageController.swift */,
 			);
 			path = Firebase;
+			sourceTree = "<group>";
+		};
+		3A61F9F922833A5C00A7B85F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3A61F9FA22833A7B00A7B85F /* RecordKey.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		660206EE269027F042EDCCBC /* Frameworks */ = {
@@ -228,6 +238,7 @@
 		FA80EF24227B8B8F00094830 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				3A61F9F922833A5C00A7B85F /* Helpers */,
 				CED1458E227DF99700342B3B /* Message.swift */,
 				3A61F9F7228337F900A7B85F /* Record.swift */,
 			);
@@ -427,6 +438,7 @@
 			files = (
 				FA765D40227E0B3200C75EF8 /* PhotoSelectorViewController.swift in Sources */,
 				FA765D42227E124300C75EF8 /* StaticContent.swift in Sources */,
+				3A61F9FB22833A7B00A7B85F /* RecordKey.swift in Sources */,
 				3A61F9F8228337F900A7B85F /* Record.swift in Sources */,
 				CED1458B227DF84700342B3B /* LoginViewController.swift in Sources */,
 				3A61F9F42283376F00A7B85F /* RecordController.swift in Sources */,
