@@ -2,7 +2,7 @@
 //  Record.swift
 //  handle
 //
-//  Created by Drew on 5/6/19.
+//  Created by Drew on 5/8/19.
 //  Copyright © 2019 Alex Lundquist. All rights reserved.
 //
 
@@ -43,7 +43,7 @@ class Record {
             let creationTimestamp = dict[RecordKey.creationTimestamp] as? TimeInterval,
             let postingTimestamp = dict[RecordKey.postingTimestamp] as? TimeInterval,
             let uid = dict[RecordKey.uid] as? String
-        else { fatalError(">>> ❌ \(#file) \(#line): guard let failed <<<"); return nil}
+            else { fatalError(">>> ❌ \(#file) \(#line): guard let failed <<<"); return nil}
         
         if let imageUrl = dict[RecordKey.imageUrl] as? String? {
             self.imageUrl = imageUrl
