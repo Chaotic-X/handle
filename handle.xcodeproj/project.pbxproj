@@ -32,6 +32,11 @@
 		FA80EF16227B8B2800094830 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA80EF14227B8B2800094830 /* Main.storyboard */; };
 		FA80EF18227B8B2800094830 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA80EF17227B8B2800094830 /* Assets.xcassets */; };
 		FA80EF1B227B8B2800094830 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA80EF19227B8B2800094830 /* LaunchScreen.storyboard */; };
+		FAB19A1D228351C7007EE536 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB19A1C228351C7007EE536 /* DateFormatter.swift */; };
+		FAB19A1F228351F8007EE536 /* DateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB19A1E228351F8007EE536 /* DateCell.swift */; };
+		FAB19A2122835252007EE536 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB19A2022835252007EE536 /* CalendarViewController.swift */; };
+		FAB19A2322835386007EE536 /* CalendarParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB19A2222835386007EE536 /* CalendarParentViewController.swift */; };
+		FAB19A2522835415007EE536 /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB19A2422835415007EE536 /* EventTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +69,11 @@
 		FA80EF17227B8B2800094830 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA80EF1A227B8B2800094830 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA80EF1C227B8B2800094830 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAB19A1C228351C7007EE536 /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
+		FAB19A1E228351F8007EE536 /* DateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCell.swift; sourceTree = "<group>"; };
+		FAB19A2022835252007EE536 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		FAB19A2222835386007EE536 /* CalendarParentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarParentViewController.swift; sourceTree = "<group>"; };
+		FAB19A2422835415007EE536 /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EventTableViewCell.swift; path = handle/Views/EventTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -257,6 +267,7 @@
 		FA80EF26227B8B9F00094830 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FAB19A2422835415007EE536 /* EventTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -269,6 +280,8 @@
 				FA760E29227BF98D00ADAEBE /* PostScheduleViewController.swift */,
 				CED1458A227DF84600342B3B /* LoginViewController.swift */,
 				FA765D3F227E0B3200C75EF8 /* PhotoSelectorViewController.swift */,
+				FAB19A2022835252007EE536 /* CalendarViewController.swift */,
+				FAB19A2222835386007EE536 /* CalendarParentViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -277,6 +290,8 @@
 			isa = PBXGroup;
 			children = (
 				FA765D41227E124300C75EF8 /* StaticContent.swift */,
+				FAB19A1C228351C7007EE536 /* DateFormatter.swift */,
+				FAB19A1E228351F8007EE536 /* DateCell.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -385,7 +400,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-handle/Pods-handle-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-handle/Pods-handle-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
 				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
@@ -426,7 +441,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-handle/Pods-handle-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-handle/Pods-handle-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -443,13 +458,18 @@
 				CED1458B227DF84700342B3B /* LoginViewController.swift in Sources */,
 				3A61F9F42283376F00A7B85F /* RecordController.swift in Sources */,
 				FA760E26227BF78D00ADAEBE /* HandleTabBarController.swift in Sources */,
+				FAB19A1D228351C7007EE536 /* DateFormatter.swift in Sources */,
 				FA80EF11227B8B2800094830 /* AppDelegate.swift in Sources */,
 				FA760E24227BECA900ADAEBE /* PostNavController.swift in Sources */,
+				FAB19A2122835252007EE536 /* CalendarViewController.swift in Sources */,
 				3A250382227FF7E7004F9233 /* FirebaseLoginController.swift in Sources */,
+				FAB19A2322835386007EE536 /* CalendarParentViewController.swift in Sources */,
 				CED1458D227DF88900342B3B /* FBNetworkController.swift in Sources */,
 				CED1458F227DF99700342B3B /* Message.swift in Sources */,
+				FAB19A1F228351F8007EE536 /* DateCell.swift in Sources */,
 				FA760E28227BF97000ADAEBE /* SelectPhotoViewController.swift in Sources */,
 				3A250384227FF805004F9233 /* FirebaseStorageController.swift in Sources */,
+				FAB19A2522835415007EE536 /* EventTableViewCell.swift in Sources */,
 				3A250380227FF7C8004F9233 /* FirebaseController.swift in Sources */,
 				FA760E2A227BF98D00ADAEBE /* PostScheduleViewController.swift in Sources */,
 			);
