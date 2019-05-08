@@ -11,6 +11,9 @@
 		3A250382227FF7E7004F9233 /* FirebaseLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A250381227FF7E7004F9233 /* FirebaseLoginController.swift */; };
 		3A250384227FF805004F9233 /* FirebaseStorageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A250383227FF805004F9233 /* FirebaseStorageController.swift */; };
 		B76158C9A4237179315321D2 /* Pods_handle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9682B8F5DC48B27382FB2287 /* Pods_handle.framework */; };
+		3A61F9F42283376F00A7B85F /* RecordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A61F9F32283376F00A7B85F /* RecordController.swift */; };
+		3A61F9F8228337F900A7B85F /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A61F9F7228337F900A7B85F /* Record.swift */; };
+		3A61F9FB22833A7B00A7B85F /* RecordKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A61F9FA22833A7B00A7B85F /* RecordKey.swift */; };
 		CED1458B227DF84700342B3B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED1458A227DF84600342B3B /* LoginViewController.swift */; };
 		CED1458D227DF88900342B3B /* FBNetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED1458C227DF88900342B3B /* FBNetworkController.swift */; };
 		CED1458F227DF99700342B3B /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED1458E227DF99700342B3B /* Message.swift */; };
@@ -39,6 +42,9 @@
 		3A250381227FF7E7004F9233 /* FirebaseLoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseLoginController.swift; sourceTree = "<group>"; };
 		3A250383227FF805004F9233 /* FirebaseStorageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseStorageController.swift; sourceTree = "<group>"; };
 		9682B8F5DC48B27382FB2287 /* Pods_handle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_handle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A61F9F32283376F00A7B85F /* RecordController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordController.swift; sourceTree = "<group>"; };
+		3A61F9F7228337F900A7B85F /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
+		3A61F9FA22833A7B00A7B85F /* RecordKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordKey.swift; sourceTree = "<group>"; };
 		CED1458A227DF84600342B3B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CED1458C227DF88900342B3B /* FBNetworkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FBNetworkController.swift; path = handle/ViewControllers/FBNetworkController.swift; sourceTree = SOURCE_ROOT; };
 		CED1458E227DF99700342B3B /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Message.swift; path = handle/ViewControllers/Message.swift; sourceTree = SOURCE_ROOT; };
@@ -82,7 +88,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		3A25037E227FF7B7004F9233 /* Firebase */ = {
+		3A61F9F922833A5C00A7B85F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3A61F9FA22833A7B00A7B85F /* RecordKey.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+    3A25037E227FF7B7004F9233 /* Firebase */ = {
 			isa = PBXGroup;
 			children = (
 				3A25037F227FF7C8004F9233 /* FirebaseController.swift */,
@@ -226,7 +240,9 @@
 		FA80EF24227B8B8F00094830 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				3A61F9F922833A5C00A7B85F /* Helpers */,
 				CED1458E227DF99700342B3B /* Message.swift */,
+				3A61F9F7228337F900A7B85F /* Record.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -235,6 +251,7 @@
 			isa = PBXGroup;
 			children = (
 				CED1458C227DF88900342B3B /* FBNetworkController.swift */,
+				3A61F9F32283376F00A7B85F /* RecordController.swift */,
 			);
 			path = ModelControllers;
 			sourceTree = "<group>";
@@ -425,7 +442,10 @@
 				CED1BF622283390F00221208 /* PagesSelectTableViewCell.swift in Sources */,
 				FA765D40227E0B3200C75EF8 /* PhotoSelectorViewController.swift in Sources */,
 				FA765D42227E124300C75EF8 /* StaticContent.swift in Sources */,
+				3A61F9FB22833A7B00A7B85F /* RecordKey.swift in Sources */,
+				3A61F9F8228337F900A7B85F /* Record.swift in Sources */,
 				CED1458B227DF84700342B3B /* LoginViewController.swift in Sources */,
+				3A61F9F42283376F00A7B85F /* RecordController.swift in Sources */,
 				FA760E26227BF78D00ADAEBE /* HandleTabBarController.swift in Sources */,
 				FA80EF11227B8B2800094830 /* AppDelegate.swift in Sources */,
 				FA760E24227BECA900ADAEBE /* PostNavController.swift in Sources */,
