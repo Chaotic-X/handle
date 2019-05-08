@@ -14,6 +14,13 @@
 		3A61F9F42283376F00A7B85F /* RecordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A61F9F32283376F00A7B85F /* RecordController.swift */; };
 		3A61F9F8228337F900A7B85F /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A61F9F7228337F900A7B85F /* Record.swift */; };
 		3A61F9FB22833A7B00A7B85F /* RecordKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A61F9FA22833A7B00A7B85F /* RecordKey.swift */; };
+
+		3A61F9FD22835B4700A7B85F /* InternalUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A61F9FC22835B4700A7B85F /* InternalUser.swift */; };
+		3A61F9FF22835D5B00A7B85F /* InternalUserKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A61F9FE22835D5B00A7B85F /* InternalUserKey.swift */; };
+		3A61FA01228361CE00A7B85F /* InternalUserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A61FA00228361CE00A7B85F /* InternalUserController.swift */; };
+		4E83F3ECD2C753687EA1A7B1 /* Pods_handle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F05BFF0A64DB2D54A23DDD99 /* Pods_handle.framework */; };
+
+
 		CED1458B227DF84700342B3B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED1458A227DF84600342B3B /* LoginViewController.swift */; };
 		CED1458D227DF88900342B3B /* FBNetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED1458C227DF88900342B3B /* FBNetworkController.swift */; };
 		CED1458F227DF99700342B3B /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED1458E227DF99700342B3B /* Message.swift */; };
@@ -45,6 +52,9 @@
 		3A61F9F32283376F00A7B85F /* RecordController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordController.swift; sourceTree = "<group>"; };
 		3A61F9F7228337F900A7B85F /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
 		3A61F9FA22833A7B00A7B85F /* RecordKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordKey.swift; sourceTree = "<group>"; };
+		3A61F9FC22835B4700A7B85F /* InternalUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternalUser.swift; sourceTree = "<group>"; };
+		3A61F9FE22835D5B00A7B85F /* InternalUserKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternalUserKey.swift; sourceTree = "<group>"; };
+		3A61FA00228361CE00A7B85F /* InternalUserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternalUserController.swift; sourceTree = "<group>"; };
 		CED1458A227DF84600342B3B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CED1458C227DF88900342B3B /* FBNetworkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FBNetworkController.swift; path = handle/ViewControllers/FBNetworkController.swift; sourceTree = SOURCE_ROOT; };
 		CED1458E227DF99700342B3B /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Message.swift; path = handle/ViewControllers/Message.swift; sourceTree = SOURCE_ROOT; };
@@ -243,6 +253,8 @@
 				3A61F9F922833A5C00A7B85F /* Helpers */,
 				CED1458E227DF99700342B3B /* Message.swift */,
 				3A61F9F7228337F900A7B85F /* Record.swift */,
+				3A61F9FC22835B4700A7B85F /* InternalUser.swift */,
+				3A61F9FE22835D5B00A7B85F /* InternalUserKey.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -252,6 +264,7 @@
 			children = (
 				CED1458C227DF88900342B3B /* FBNetworkController.swift */,
 				3A61F9F32283376F00A7B85F /* RecordController.swift */,
+				3A61FA00228361CE00A7B85F /* InternalUserController.swift */,
 			);
 			path = ModelControllers;
 			sourceTree = "<group>";
@@ -439,6 +452,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+
+				3A61FA01228361CE00A7B85F /* InternalUserController.swift in Sources */,
 				CED1BF622283390F00221208 /* PagesSelectTableViewCell.swift in Sources */,
 				FA765D40227E0B3200C75EF8 /* PhotoSelectorViewController.swift in Sources */,
 				FA765D42227E124300C75EF8 /* StaticContent.swift in Sources */,
@@ -447,6 +462,7 @@
 				CED1458B227DF84700342B3B /* LoginViewController.swift in Sources */,
 				3A61F9F42283376F00A7B85F /* RecordController.swift in Sources */,
 				FA760E26227BF78D00ADAEBE /* HandleTabBarController.swift in Sources */,
+				3A61F9FF22835D5B00A7B85F /* InternalUserKey.swift in Sources */,
 				FA80EF11227B8B2800094830 /* AppDelegate.swift in Sources */,
 				FA760E24227BECA900ADAEBE /* PostNavController.swift in Sources */,
 				3A250382227FF7E7004F9233 /* FirebaseLoginController.swift in Sources */,
@@ -456,6 +472,7 @@
 				3A250384227FF805004F9233 /* FirebaseStorageController.swift in Sources */,
 				3A250380227FF7C8004F9233 /* FirebaseController.swift in Sources */,
 				FA760E2A227BF98D00ADAEBE /* PostScheduleViewController.swift in Sources */,
+				3A61F9FD22835B4700A7B85F /* InternalUser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
