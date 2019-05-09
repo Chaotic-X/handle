@@ -7,3 +7,9 @@
 //
 
 import Foundation
+
+struct InternalUserKey {
+    static let emailAddress = "emailAddress"
+    static let recordsUids = "recorsdUids"
+    static let uid = "uid"
+}
