@@ -10,17 +10,13 @@
 		3A250380227FF7C8004F9233 /* FirebaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A25037F227FF7C8004F9233 /* FirebaseController.swift */; };
 		3A250382227FF7E7004F9233 /* FirebaseLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A250381227FF7E7004F9233 /* FirebaseLoginController.swift */; };
 		3A250384227FF805004F9233 /* FirebaseStorageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A250383227FF805004F9233 /* FirebaseStorageController.swift */; };
-		B76158C9A4237179315321D2 /* Pods_handle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9682B8F5DC48B27382FB2287 /* Pods_handle.framework */; };
 		3A61F9F42283376F00A7B85F /* RecordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A61F9F32283376F00A7B85F /* RecordController.swift */; };
 		3A61F9F8228337F900A7B85F /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A61F9F7228337F900A7B85F /* Record.swift */; };
 		3A61F9FB22833A7B00A7B85F /* RecordKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A61F9FA22833A7B00A7B85F /* RecordKey.swift */; };
-
 		3A61F9FD22835B4700A7B85F /* InternalUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A61F9FC22835B4700A7B85F /* InternalUser.swift */; };
-		3A61F9FF22835D5B00A7B85F /* InternalUserKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A61F9FE22835D5B00A7B85F /* InternalUserKey.swift */; };
 		3A61FA01228361CE00A7B85F /* InternalUserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A61FA00228361CE00A7B85F /* InternalUserController.swift */; };
-		4E83F3ECD2C753687EA1A7B1 /* Pods_handle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F05BFF0A64DB2D54A23DDD99 /* Pods_handle.framework */; };
-
-
+		3A61FA042284927200A7B85F /* InternalUserKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A61FA032284927200A7B85F /* InternalUserKey.swift */; };
+		B76158C9A4237179315321D2 /* Pods_handle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9682B8F5DC48B27382FB2287 /* Pods_handle.framework */; };
 		CED1458B227DF84700342B3B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED1458A227DF84600342B3B /* LoginViewController.swift */; };
 		CED1458D227DF88900342B3B /* FBNetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED1458C227DF88900342B3B /* FBNetworkController.swift */; };
 		CED1458F227DF99700342B3B /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED1458E227DF99700342B3B /* Message.swift */; };
@@ -53,13 +49,13 @@
 		3A25037F227FF7C8004F9233 /* FirebaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseController.swift; sourceTree = "<group>"; };
 		3A250381227FF7E7004F9233 /* FirebaseLoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseLoginController.swift; sourceTree = "<group>"; };
 		3A250383227FF805004F9233 /* FirebaseStorageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseStorageController.swift; sourceTree = "<group>"; };
-		9682B8F5DC48B27382FB2287 /* Pods_handle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_handle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A61F9F32283376F00A7B85F /* RecordController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordController.swift; sourceTree = "<group>"; };
 		3A61F9F7228337F900A7B85F /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
 		3A61F9FA22833A7B00A7B85F /* RecordKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordKey.swift; sourceTree = "<group>"; };
-		3A61F9FC22835B4700A7B85F /* InternalUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternalUser.swift; sourceTree = "<group>"; };
-		3A61F9FE22835D5B00A7B85F /* InternalUserKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternalUserKey.swift; sourceTree = "<group>"; };
+		3A61F9FC22835B4700A7B85F /* InternalUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InternalUser.swift; path = handle/Models/InternalUser.swift; sourceTree = SOURCE_ROOT; };
 		3A61FA00228361CE00A7B85F /* InternalUserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternalUserController.swift; sourceTree = "<group>"; };
+		3A61FA032284927200A7B85F /* InternalUserKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternalUserKey.swift; sourceTree = "<group>"; };
+		9682B8F5DC48B27382FB2287 /* Pods_handle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_handle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CED1458A227DF84600342B3B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CED1458C227DF88900342B3B /* FBNetworkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FBNetworkController.swift; path = handle/ViewControllers/FBNetworkController.swift; sourceTree = SOURCE_ROOT; };
 		CED1458E227DF99700342B3B /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Message.swift; path = handle/ViewControllers/Message.swift; sourceTree = SOURCE_ROOT; };
@@ -108,6 +104,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		3A25037E227FF7B7004F9233 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				3A25037F227FF7C8004F9233 /* FirebaseController.swift */,
+				3A250381227FF7E7004F9233 /* FirebaseLoginController.swift */,
+				3A250383227FF805004F9233 /* FirebaseStorageController.swift */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
 		3A61F9F922833A5C00A7B85F /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -116,14 +122,12 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
-    3A25037E227FF7B7004F9233 /* Firebase */ = {
+		3A61FA0222848CB200A7B85F /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
-				3A25037F227FF7C8004F9233 /* FirebaseController.swift */,
-				3A250381227FF7E7004F9233 /* FirebaseLoginController.swift */,
-				3A250383227FF805004F9233 /* FirebaseStorageController.swift */,
+				CED1BF612283390F00221208 /* PagesSelectTableViewCell.swift */,
 			);
-			path = Firebase;
+			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 		B17AC2289A17BA1F6F7C064B /* Pods */ = {
@@ -206,6 +210,7 @@
 				FA80EF0E227B8B2800094830 /* Products */,
 				B17AC2289A17BA1F6F7C064B /* Pods */,
 				0A940D9EF705CE59C2318896 /* Frameworks */,
+				3A61FA0222848CB200A7B85F /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -264,7 +269,7 @@
 				CED1458E227DF99700342B3B /* Message.swift */,
 				3A61F9F7228337F900A7B85F /* Record.swift */,
 				3A61F9FC22835B4700A7B85F /* InternalUser.swift */,
-				3A61F9FE22835D5B00A7B85F /* InternalUserKey.swift */,
+				3A61FA032284927200A7B85F /* InternalUserKey.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -466,12 +471,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-
 				3A61FA01228361CE00A7B85F /* InternalUserController.swift in Sources */,
 				CED1BF622283390F00221208 /* PagesSelectTableViewCell.swift in Sources */,
 				FA765D40227E0B3200C75EF8 /* PhotoSelectorViewController.swift in Sources */,
 				FA765D42227E124300C75EF8 /* StaticContent.swift in Sources */,
 				3A61F9FB22833A7B00A7B85F /* RecordKey.swift in Sources */,
+				3A61FA042284927200A7B85F /* InternalUserKey.swift in Sources */,
 				3A61F9F8228337F900A7B85F /* Record.swift in Sources */,
 				CED1458B227DF84700342B3B /* LoginViewController.swift in Sources */,
 				3A61F9F42283376F00A7B85F /* RecordController.swift in Sources */,
